@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich" xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelStretchLayout id="psl1" topHeight="20px">
+    <f:facet name="center">
+      <af:panelGroupLayout id="pgl1">
+        <af:outputText value="#{pageFlowScope.tabName}" id="ot1" inlineStyle="font-size:x-large;"/>
+      </af:panelGroupLayout>
+      <!-- id="af_one_column_stretched"   -->
+    </f:facet>
+    <f:facet name="top">
+      <af:commandButton text="Inner Navigate Tab" id="cb1" action="navigate_next_tab"/>
+    </f:facet>
+  </af:panelStretchLayout>
+</jsp:root>

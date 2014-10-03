@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="tab-btf">
+    <default-activity id="__3">tab</default-activity>
+    <input-parameter-definition id="__1">
+      <name id="__2">tabName</name>
+      <value>#{pageFlowScope.tabName}</value>
+      <class>java.lang.String</class>
+      <required/>
+    </input-parameter-definition>
+    <view id="tab">
+      <page>/WEB-INF/de/hahn/blog/paneltabnavigate/tab/tab.jsff</page>
+    </view>
+    <parent-action id="nextTab">
+      <parent-outcome>nextTab</parent-outcome>
+    </parent-action>
+    <control-flow-rule id="__4">
+      <from-activity-id id="__5">tab</from-activity-id>
+      <control-flow-case id="__6">
+        <from-outcome id="__8">navigate_next_tab</from-outcome>
+        <to-activity-id id="__7">nextTab</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

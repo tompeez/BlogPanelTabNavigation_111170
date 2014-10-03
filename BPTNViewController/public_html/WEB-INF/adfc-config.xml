@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <view id="Start">
+    <page>/Start.jspx</page>
+  </view>
+  <method-call id="selectNextTab">
+    <method>#{viewScope.NavigateTabBean.nextTab}</method>
+    <outcome id="__15">
+      <fixed-outcome>goPage</fixed-outcome>
+    </outcome>
+  </method-call>
+  <control-flow-rule id="__1">
+    <from-activity-id id="__2">*</from-activity-id>
+    <control-flow-case id="__4">
+      <from-outcome id="__5">nextTab</from-outcome>
+      <to-activity-id id="__3">selectNextTab</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <control-flow-rule id="__6">
+    <from-activity-id id="__7">selectNextTab</from-activity-id>
+    <control-flow-case id="__9">
+      <from-outcome id="__10">goPage</from-outcome>
+      <to-activity-id id="__8">Start</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <managed-bean id="__12">
+    <managed-bean-name id="__14">NavigateTabBean</managed-bean-name>
+    <managed-bean-class id="__11">de.hahn.blog.paneltabnavigate.view.beans.NavigateTabBean</managed-bean-class>
+    <managed-bean-scope id="__13">view</managed-bean-scope>
+  </managed-bean>
+</adfc-config>
