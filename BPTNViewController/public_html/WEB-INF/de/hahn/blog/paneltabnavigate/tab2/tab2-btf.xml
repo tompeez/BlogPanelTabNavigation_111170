@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="tab2-btf">
+    <default-activity id="__1">tab2</default-activity>
+    <view id="tab2">
+      <page>/WEB-INF/de/hahn/blog/paneltabnavigate/tab2/tab2.jsff</page>
+    </view>
+    <parent-action id="nextTab">
+      <parent-outcome>nextTab</parent-outcome>
+    </parent-action>
+    <control-flow-rule id="__8">
+      <from-activity-id id="__9">tab2</from-activity-id>
+      <control-flow-case id="__10">
+        <from-outcome id="__12">navigate_next_tab</from-outcome>
+        <to-activity-id id="__11">nextTab</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

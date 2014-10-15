@@ -21,6 +21,10 @@
         <parameter id="tabName" value="Region Tab 3"/>
       </parameters>
     </taskFlow>
+    <taskFlow id="tab2btf1" taskFlowId="/WEB-INF/de/hahn/blog/paneltabnavigate/tab2/tab2-btf.xml#tab2-btf" activation="deferred"
+              xmlns="http://xmlns.oracle.com/adf/controller/binding"/>
+    <taskFlow id="tab3btf1" taskFlowId="/WEB-INF/de/hahn/blog/paneltabnavigate/tab3/tab3-btf.xml#tab3-btf" activation="deferred"
+              xmlns="http://xmlns.oracle.com/adf/controller/binding"/>
   </executables>
   <bindings/>
 </pageDefinition>

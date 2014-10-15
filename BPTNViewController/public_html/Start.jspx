@@ -53,6 +53,32 @@
                       </f:facet>
                     </af:panelStretchLayout>
                   </af:showDetailItem>
+                  <af:showDetailItem text="Tab Label 4" id="sdi4" stretchChildren="first">
+                    <af:panelStretchLayout id="psl6">
+                      <f:facet name="bottom"/>
+                      <f:facet name="center">
+                        <af:region value="#{bindings.tab2btf1.regionModel}" id="r4"/>
+                      </f:facet>
+                      <f:facet name="start"/>
+                      <f:facet name="end"/>
+                      <f:facet name="top">
+                        <af:outputText value="Tab 4" id="ot5"/>
+                      </f:facet>
+                    </af:panelStretchLayout>
+                  </af:showDetailItem>
+                  <af:showDetailItem text="Tab Label 5" id="sdi5" stretchChildren="first">
+                    <af:panelStretchLayout id="psl7">
+                      <f:facet name="bottom"/>
+                      <f:facet name="center">
+                        <af:region value="#{bindings.tab3btf1.regionModel}" id="r5"/>
+                      </f:facet>
+                      <f:facet name="start"/>
+                      <f:facet name="end"/>
+                      <f:facet name="top">
+                        <af:outputText value="Tab 5" id="ot6" inlineStyle="font-size:x-large;"/>
+                      </f:facet>
+                    </af:panelStretchLayout>
+                  </af:showDetailItem>
                 </af:panelTabbed>
               </f:facet>
               <f:facet name="start"/>

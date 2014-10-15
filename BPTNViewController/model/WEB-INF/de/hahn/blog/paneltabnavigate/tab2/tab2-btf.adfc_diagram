@@ -5,24 +5,24 @@
    <View
       id="View2">
       <property
-         name="activityId">tab</property>
+         name="activityId">tab2</property>
       <property
-         name="page">/WEB-INF/de/hahn/blog/paneltabnavigate/tab/tab.jsff</property>
+         name="page">/WEB-INF/de/hahn/blog/paneltabnavigate/tab2/tab2.jsff</property>
       <property
          name="start">true</property>
       <property
-         name="description">&lt;html>&lt;p>&lt;b>tab&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+         name="description">&lt;html>&lt;p>&lt;b>tab2&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
          name="exceptionHandler">false</property>
       <property
-         name="y">216.33008</property>
+         name="y">240.29883</property>
       <property
-         name="x">400.0</property>
+         name="x">241.0</property>
       <property
          name="pageFragment">true</property>
    </View>
    <ParentAction
-      id="ParentAction3">
+      id="ParentAction5">
       <property
          name="activityId">nextTab</property>
       <property
@@ -30,18 +30,18 @@
       <property
          name="exceptionHandler">false</property>
       <property
-         name="y">213.03125</property>
+         name="y">225.14355</property>
       <property
-         name="x">740.0</property>
+         name="x">541.0</property>
    </ParentAction>
    <ControlFlowCase
       islink="true"
-      id="ControlFlowCase4"
+      id="ControlFlowCase6"
       from="View2"
-      to="ParentAction3">
+      to="ParentAction5">
       <property
          name="fromOutcome">navigate_next_tab</property>
       <property
-         name="sdm:polyPoints">R50,441.0,215.97949,699.0,212.68066,L50</property>
+         name="sdm:polyPoints">R50,282.0,239.94824,500.0,224.79297,L50</property>
    </ControlFlowCase>
 </SDM>

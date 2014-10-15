@@ -5,19 +5,19 @@
    <View
       id="View2">
       <property
-         name="activityId">tab</property>
+         name="activityId">view1</property>
       <property
-         name="page">/WEB-INF/de/hahn/blog/paneltabnavigate/tab/tab.jsff</property>
+         name="page">/WEB-INF/de/hahn/blog/paneltabnavigate/tab3/tab3.jsff</property>
       <property
          name="start">true</property>
       <property
-         name="description">&lt;html>&lt;p>&lt;b>tab&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+         name="description">&lt;html>&lt;p>&lt;b>view1&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
          name="exceptionHandler">false</property>
       <property
-         name="y">216.33008</property>
+         name="y">252.29883</property>
       <property
-         name="x">400.0</property>
+         name="x">304.0</property>
       <property
          name="pageFragment">true</property>
    </View>
@@ -30,9 +30,9 @@
       <property
          name="exceptionHandler">false</property>
       <property
-         name="y">213.03125</property>
+         name="y">248.23535</property>
       <property
-         name="x">740.0</property>
+         name="x">680.0</property>
    </ParentAction>
    <ControlFlowCase
       islink="true"
@@ -42,6 +42,6 @@
       <property
          name="fromOutcome">navigate_next_tab</property>
       <property
-         name="sdm:polyPoints">R50,441.0,215.97949,699.0,212.68066,L50</property>
+         name="sdm:polyPoints">R50,345.0,251.94824,639.0,247.88477,L50</property>
    </ControlFlowCase>
 </SDM>
